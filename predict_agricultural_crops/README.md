@@ -1,0 +1,1 @@
+Using supervised machine learning and feature selection to predict the type of crop accurately.

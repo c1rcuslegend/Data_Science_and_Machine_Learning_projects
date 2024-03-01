@@ -1,0 +1,1 @@
+Appling machine learning methods to train a classifier to distinguish between the two genres based only on track information derived from Echonest by using PCA, logistic regression, decision trees and cross validation.
