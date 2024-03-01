@@ -1,0 +1,1 @@
+Building a machine learning model to predict if a credit card application will get approved by analyzing the Credit Card Approval dataset from the UCI Machine Learning Repository. Cleaning the data, dealing with missing values, using Lasso Regression to define the most important features, rescaling them and training logistic regression model followed by hyperparameter tuning.
