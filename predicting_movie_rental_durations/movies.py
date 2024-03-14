@@ -57,7 +57,7 @@ plt.xticks(rotation=45)
 plt.show()
 plt.clf()
 # Segregating those features
-feature_subset=np.array(names)[lasso1_coef>0.1]
+feature_subset=np.array(names)[lasso1_coef>0.01]
 new_features_names = features_names[features_names.columns.intersection(feature_subset)]
 # Again splitting the data
 new_features = new_features_names.values
