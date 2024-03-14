@@ -1,1 +1,1 @@
-Using supervised machine learning and feature selection to predict the type of crop accurately.
+This project leverages supervised machine learning to predict crop types accurately. It involves preprocessing data, selecting informative features (removing correlated ones), and training a linear regression model for crop type prediction.

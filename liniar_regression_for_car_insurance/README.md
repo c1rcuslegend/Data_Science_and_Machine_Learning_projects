@@ -1,1 +1,1 @@
-Cleaning customer data and using logistic regression to predict whether people will make a claim on their car insurance.
+This project tackles the task of predicting car insurance claims. We clean the customer data and then employ Logistic Regression (from the SciPy package) with a single feature to analyze the data and predict whether a customer is likely to make a car insurance claim.

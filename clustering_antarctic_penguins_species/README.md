@@ -1,1 +1,1 @@
-Use machine learning techniques such as K-means Clustering, Normalization, PCA to uncover concealed patterns, clusters, and relationships that exist within the dataset
+This project utilizes K-Means clustering, normalization, and PCA to reveal hidden patterns, clusters, and relationships within dataset of antarctic penguins species.

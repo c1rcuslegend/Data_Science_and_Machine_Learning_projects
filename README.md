@@ -1,1 +1,1 @@
-This repository contains a collection of projects exploring various aspects of data science and machine learning in Python.
+This collection of Python projects showcases applications of data science and machine learning, ranging from simpler to more complex ones.

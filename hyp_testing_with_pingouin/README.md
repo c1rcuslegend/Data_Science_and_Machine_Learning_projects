@@ -1,1 +1,1 @@
-Performing a hypothesis test to determine if more goals are scored in women's soccer matches than men's.
+This project uses a Mann-Whitney U Test from the Pingouin package to perform a hypothesis test and determine if more goals are scored in women's soccer matches compared to men's.
