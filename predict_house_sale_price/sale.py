@@ -43,7 +43,7 @@ categorical_cols = ["city","house_type"]
 numerical_cols = ["months_listed", "bedrooms", "area"]
 # initializing the One Hot Encoder
 # encodeing the categorical features and concatenating with the numeric ones
-encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')  # Consider options for unknown categories
+encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')  
 X_train_encoded = pd.concat([X_train[numerical_cols], pd.DataFrame(encoder.fit_transform(X_train[categorical_cols]))], axis=1)
 X_test_encoded = pd.concat([X_test[numerical_cols], pd.DataFrame(encoder.transform(X_test[categorical_cols]))], axis=1)
 # making sure that columns have the same data type
@@ -63,7 +63,7 @@ random_forest_grid = {
     'min_samples_split': [2, 5, 10]
 }
 random_forest_regressor = GridSearchCV(RandomForestRegressor(), 
-        random_forest_grid, cv=5, scoring='neg_mean_squared_error', n_jobs=-1)  # Use GridSearchCV for random forest (consider RandomizedSearchCV for broader exploration)
+        random_forest_grid, cv=5, scoring='neg_mean_squared_error', n_jobs=-1)  
 random_forest_regressor.fit(X_train_encoded, y_train)
 random_forest_best = random_forest_regressor.best_estimator_
 y_pred_rf = random_forest_best.predict(X_test_encoded)
@@ -76,7 +76,7 @@ gradient_boosting_grid = {
     'max_depth': [3, 5, 8]
 }
 gradient_boosting_regressor = GridSearchCV(GradientBoostingRegressor(), 
-        gradient_boosting_grid, cv=5, scoring='neg_mean_squared_error', n_jobs=-1)  # Use GridSearchCV for gradient boosting (consider RandomizedSearchCV for broader exploration)
+        gradient_boosting_grid, cv=5, scoring='neg_mean_squared_error', n_jobs=-1)  
 gradient_boosting_regressor.fit(X_train_encoded, y_train)
 gradient_boosting_best = gradient_boosting_regressor.best_estimator_
 y_pred_gb = gradient_boosting_best.predict(X_test_encoded)
